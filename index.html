@@ -4,57 +4,235 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Hilde Julie Panzou Chimi – Akademisches Bewerbungsprofil</title>
+
+  <!-- Google Fonts: Eine elegante Serifenschrift für Überschriften + saubere Sans-Serif für Fließtext -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
   <style>
-    body { font-family: Arial, sans-serif; max-width: 700px; margin: 40px auto; padding: 0 20px; line-height: 1.6; color: #222; }
-    h1 { margin-bottom: 0; }
-    h2 { border-bottom: 2px solid #ddd; padding-bottom: 4px; margin-top: 32px; }
-    a { color: #0b5cad; }
+    /* ====== RESET & BASIS ====== */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* ====== BODY – der „Hintergrund" ====== */
+    body {
+      font-family: 'Inter', Arial, sans-serif;
+      /* Statt weiß: ein sehr helles, warmes Grau mit dezentem Verlauf */
+      background: linear-gradient(160deg, #f0f4f8 0%, #e8edf5 50%, #f5f0eb 100%);
+      min-height: 100vh;
+      color: #2c3e50;
+      line-height: 1.7;
+      padding: 0;
+    }
+
+    /* ====== INHALTS-CONTAINER (die „Karte") ====== */
+    .container {
+      max-width: 760px;
+      margin: 48px auto;
+      padding: 56px 48px;
+      background: #ffffff;
+      border-radius: 16px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08),
+                  0 2px 8px rgba(0, 0, 0, 0.04);
+    }
+
+    /* ====== NAMENS-HEADER ====== */
+    .header {
+      text-align: center;
+      margin-bottom: 40px;
+      padding-bottom: 32px;
+      border-bottom: 3px solid #e2e8f0;
+    }
+
+    .header h1 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 2.4rem;
+      font-weight: 700;
+      color: #1a2a3a;
+      letter-spacing: 0.5px;
+      margin-bottom: 12px;
+    }
+
+    .header .tagline {
+      font-size: 1.05rem;
+      color: #5a6b7d;
+      font-weight: 400;
+      max-width: 560px;
+      margin: 0 auto;
+    }
+
+    /* ====== ABSCHNITTS-ÜBERSCHRIFTEN ====== */
+    h2 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: #1a2a3a;
+      margin-top: 40px;
+      margin-bottom: 16px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #e2e8f0;
+      position: relative;
+    }
+
+    /* Kleiner dekorativer Akzent links neben dem h2 */
+    h2::before {
+      content: '';
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      background: #3b82f6;
+      border-radius: 50%;
+      margin-right: 10px;
+      vertical-align: middle;
+    }
+
+    /* ====== PROJEKT-UNTERÜBERSCHRIFTEN ====== */
+    h3 {
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: #2c3e50;
+      margin-top: 24px;
+      margin-bottom: 8px;
+    }
+
+    /* ====== ABSÄTZE & LISTEN ====== */
+    p {
+      margin-bottom: 14px;
+      font-size: 0.97rem;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      padding: 8px 0 8px 24px;
+      position: relative;
+      font-size: 0.97rem;
+    }
+
+    /* Dezent blauer Pfeil statt Standard-Punkt */
+    ul li::before {
+      content: '▸';
+      position: absolute;
+      left: 4px;
+      color: #3b82f6;
+      font-weight: bold;
+    }
+
+    /* ====== LINKS ====== */
+    a {
+      color: #2563eb;
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.2s;
+    }
+
+    a:hover {
+      border-bottom-color: #2563eb;
+    }
+
+    /* ====== KONTAKT-BOX ====== */
+    .contact-box {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 10px;
+      padding: 20px 24px;
+      margin-top: 16px;
+      text-align: center;
+    }
+
+    /* ====== RESPONSIVE (Handy) ====== */
+    @media (max-width: 600px) {
+      .container {
+        margin: 16px 12px;
+        padding: 32px 24px;
+      }
+      .header h1 {
+        font-size: 1.8rem;
+      }
+    }
   </style>
 </head>
 <body>
-  <h1>Hilde Julie Panzou Chimi</h1>
-  <p>Logistikerin (M. Sc.) an der Schnittstelle von Logistik und IT - mit Interesse an SAP-Logistik, Supply-Chain-Management 
-    und Prozessoptimierung.</p>
 
-  <h2>Über mich</h2>
-  <p>Ich habe an der TU Dortmund Logistik studiert (M.Sc.) und mich auf Optimierungsverfahren, Simulation und IT-Logistik spezialisiert. 
-    Durch Weiterbildungen in SAP S/4HANA und SAP BW/4HANA sowie in C++ und SQL verbinde ich logistisches Prozessverständnis 
-    mit IT-Kompetenz; praktische Erfahrung habe ich in der Intralogistik und im E-Commerce gesammelt. Mich motiviert es, 
-    logistische Abläufe zu analysieren, mit digitalen Lösungen zu verbessern und dabei Fachbereich und IT zusammenzubringen.</p>
-  
-  <h2>Schwerpunkte</h2>
-<ul>
-    <li>SAP-Logistik (Beschaffung, Materialwirtschaft, Produktionsplanung, Vertrieb) und SAP BW/4HANA</li>
-    <li>IT-Logistik und Prozessdigitalisierung</li>
-    <li>Supply Chain Management und logistische Netzwerke Design</li>
-    <li>Effiziente Disposition und Intralogistik</li>
-    <li>Optimierung und Simulation logistischer Systeme</li>
-</ul>
-  
-  <h2>Projekte</h2>
+  <div class="container">
 
-  <h3>Masterarbeit (2025-2026): Realitätsnähe mathematischer Modelle in Logistik-Service-Netzen</h3>
-  <p>Auf Grundlage einer systematischen Literaturrecherche wurde zunächst ein Kriterienkatalog mit 19 Kriterien zur Bewertung 
-    der Realitätsnähe mathematischer Modelle entwickelt. Durch die qualitative Inhaltsanalyse von neun Experteninterviews 
-    wurde dieser Katalog überprüft, präzisiert und auf 14 validierte Kriterien verdichtet. Abschließend wurden fünf aktuelle, 
-    in der Forschungsliteratur veröffentlichte Modelle anhand des entwickelten Kriterienkatalogs systematisch bewertet.</p>
-  
-  <h3>Fachlabor Logistik - Simulation (2019)</h3>
-  <p>Entwicklung und Analyse logistischer Simulationsmodelle mit Plant Simulation und Enterprise Dynamics. 
-    Der Arbeitsprozess umfasste die Erstellung konzeptioneller Modelle, deren softwaregestützte Umsetzung 
-    sowie die Durchführung und Auswertung von Simulationsexperimenten.</p>
+    <!-- ====== HEADER ====== -->
+    <div class="header">
+      <h1>Hilde Julie Panzou Chimi</h1>
+      <p class="tagline">Logistikerin (M. Sc.) an der Schnittstelle von Logistik und IT –
+        mit Fokus auf SAP-Logistik, Supply-Chain-Management und Prozessoptimierung.</p>
+    </div>
 
-  <h3>Fachlabor Logistik - Optimierung (2020)</h3>
-  <p>Bearbeitung einer strategischen Netzplanungsaufgabe mithilfe der Optimierungssoftware GAMS. Die Tätigkeiten umfassten die Analyse relevanter Einflussgrößen und Kosten, die Implementierung des mathematischen Optimierungsmodells sowie dessen Lösung mithilfe eines Solvers. Darüber hinaus wurde im Team eine geeignete Lösungsstrategie entwickelt und abgestimmt.</p>
-  
-  <h3>Fachwissenschaftliche Projektarbeit: Entwicklung einer Übungsreihe zur Optimierung im KEP-Kontext (2019)</h3>
-  <p>Die für die Lehrveranstaltung Verkehrslogistik II entwickelte Übungsreihe behandelte zentrale Problemstellungen der mathematischen Optimierung, darunter lineare Optimierung, Standortplanung (Warehouse Location Problem) sowie Touren- und Routenplanung (Traveling-Salesman-Problem und kapazitiertes Vehicle-Routing-Problem). Ergänzend wurden geeignete Lösungsverfahren vermittelt und ein didaktisches Konzept zur Integration von E-Learning-Elementen konzipiert.</p>
+    <!-- ====== ÜBER MICH ====== -->
+    <h2>Über mich</h2>
+    <p>Ich habe an der TU Dortmund Logistik studiert (M. Sc.) und mich auf Optimierungsverfahren,
+      Simulation und IT-Logistik spezialisiert. Durch Weiterbildungen in SAP S/4HANA und
+      SAP BW/4HANA sowie in C++ und SQL verbinde ich logistisches Prozessverständnis mit
+      IT-Kompetenz; praktische Erfahrung habe ich in der Intralogistik und im E-Commerce
+      gesammelt. Mich motiviert es, logistische Abläufe zu analysieren, mit digitalen
+      Lösungen zu verbessern und dabei Fachbereich und IT zusammenzubringen.</p>
 
-   <h3>Unternehmenslogistik und Supply Chain Management (2017)</h3>
-  <p>Grundlagen und Vertiefung essenzieller Themen der Unternehmenslogistik und des Supply Chain Managements, insbesondere Supply-Chain-Strategien, strategische Netzwerkplanung, Risikomanagement, Nachhaltigkeit und Industrie 4.0.</p>
-  
-  <h2>Kontakt</h2>
-  <p>Ich freue mich über Ihre Nachricht.</p>
-  <p>E-Mail: <a href="mailto:dareyan@gmx.de">dareyan@gmx.de</a></p>
+    <!-- ====== SCHWERPUNKTE ====== -->
+    <h2>Schwerpunkte</h2>
+    <ul>
+      <li>SAP-Logistik (Beschaffung, Materialwirtschaft, Produktionsplanung, Vertrieb) und SAP BW/4HANA</li>
+      <li>IT-Logistik und Prozessdigitalisierung</li>
+      <li>Supply Chain Management und logistisches Netzwerkdesign</li>
+      <li>Effiziente Disposition und Intralogistik</li>
+      <li>Optimierung und Simulation logistischer Systeme</li>
+    </ul>
+
+    <!-- ====== PROJEKTE ====== -->
+    <h2>Projekte</h2>
+
+    <h3>Masterarbeit (2025–2026): Realitätsnähe mathematischer Modelle in Logistik-Service-Netzen</h3>
+    <p>Auf Grundlage einer systematischen Literaturrecherche wurde zunächst ein Kriterienkatalog
+      mit 19 Kriterien zur Bewertung der Realitätsnähe mathematischer Modelle entwickelt.
+      Durch die qualitative Inhaltsanalyse von neun Experteninterviews wurde dieser Katalog
+      überprüft, präzisiert und auf 14 validierte Kriterien verdichtet. Abschließend wurden
+      fünf aktuelle, in der Forschungsliteratur veröffentlichte Modelle anhand des entwickelten
+      Kriterienkatalogs systematisch bewertet.</p>
+
+    <h3>Fachlabor Logistik – Simulation (2019)</h3>
+    <p>Entwicklung und Analyse logistischer Simulationsmodelle mit Plant Simulation und
+      Enterprise Dynamics. Der Arbeitsprozess umfasste die Erstellung konzeptioneller Modelle,
+      deren softwaregestützte Umsetzung sowie die Durchführung und Auswertung von
+      Simulationsexperimenten.</p>
+
+    <h3>Fachlabor Logistik – Optimierung (2020)</h3>
+    <p>Bearbeitung einer strategischen Netzplanungsaufgabe mithilfe der Optimierungssoftware
+      GAMS. Die Tätigkeiten umfassten die Analyse relevanter Einflussgrößen und Kosten, die
+      Implementierung des mathematischen Optimierungsmodells sowie dessen Lösung mithilfe
+      eines Solvers. Darüber hinaus wurde im Team eine geeignete Lösungsstrategie entwickelt
+      und abgestimmt.</p>
+
+    <h3>Fachwissenschaftliche Projektarbeit: Entwicklung einer Übungsreihe zur Optimierung im KEP-Kontext (2019)</h3>
+    <p>Die für die Lehrveranstaltung Verkehrslogistik II entwickelte Übungsreihe behandelte
+      zentrale Problemstellungen der mathematischen Optimierung, darunter lineare Optimierung,
+      Standortplanung (Warehouse Location Problem) sowie Touren- und Routenplanung
+      (Traveling-Salesman-Problem und kapazitiertes Vehicle-Routing-Problem). Ergänzend
+      wurden geeignete Lösungsverfahren vermittelt und ein didaktisches Konzept zur
+      Integration von E-Learning-Elementen konzipiert.</p>
+
+    <h3>Unternehmenslogistik und Supply Chain Management (2017)</h3>
+    <p>Grundlagen und Vertiefung essenzieller Themen der Unternehmenslogistik und des
+      Supply Chain Managements, insbesondere Supply-Chain-Strategien, strategische
+      Netzwerkplanung, Risikomanagement, Nachhaltigkeit und Industrie 4.0.</p>
+
+    <!-- ====== KONTAKT ====== -->
+    <h2>Kontakt</h2>
+    <div class="contact-box">
+      <p>Ich freue mich über Ihre Nachricht.</p>
+      <p>E-Mail: <a href="mailto:dareyan@gmx.de">dareyan@gmx.de</a></p>
+    </div>
+
+  </div>
+
 </body>
 </html>
