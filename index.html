@@ -1,243 +1,392 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Hilde Julie Panzou Chimi – Akademisches Bewerbungsprofil</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title data-de="Hilde Julie Panzou Chimi – Akademisches Bewerbungsprofil" data-en="Hilde Julie Panzou Chimi – Academic CV">
+        Hilde Julie Panzou Chimi – Akademisches Bewerbungsprofil
+    </title>
 
-  <!-- Google Fonts: Eine elegante Serifenschrift für Überschriften + saubere Sans-Serif für Fließtext -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
-  <style>
-    /* ====== RESET & BASIS ====== */
-    *, *::before, *::after {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+    <style>
+        /* ====== RESET & BASIS ====== */
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
-    /* ====== BODY – der „Hintergrund" ====== */
-    body {
-      font-family: 'Inter', Arial, sans-serif;
-      /* Statt weiß: ein sehr helles, warmes Grau mit dezentem Verlauf */
-      background: linear-gradient(160deg, #f0f4f8 0%, #e8edf5 50%, #f5f0eb 100%);
-      min-height: 100vh;
-      color: #2c3e50;
-      line-height: 1.7;
-      padding: 0;
-    }
+        body {
+            font-family: 'Inter', Arial, sans-serif;
+            background: linear-gradient(160deg, #f0f4f8 0%, #e8edf5 50%, #f5f0eb 100%);
+            min-height: 100vh;
+            color: #2c3e50;
+            line-height: 1.7;
+            padding: 0;
+        }
 
-    /* ====== INHALTS-CONTAINER (die „Karte") ====== */
-    .container {
-      max-width: 760px;
-      margin: 48px auto;
-      padding: 56px 48px;
-      background: #ffffff;
-      border-radius: 16px;
-      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08),
-                  0 2px 8px rgba(0, 0, 0, 0.04);
-    }
+        .container {
+            max-width: 760px;
+            margin: 48px auto;
+            padding: 56px 48px;
+            background: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08),
+                0 2px 8px rgba(0, 0, 0, 0.04);
+        }
 
-    /* ====== NAMENS-HEADER ====== */
-    .header {
-      text-align: center;
-      margin-bottom: 40px;
-      padding-bottom: 32px;
-      /*border-bottom: 3px solid #e2e8f0;*/  /* Bottom Linie in Header pausieren*/
-    }
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 32px;
+            border-bottom: 3px solid #e2e8f0;
+        }
 
-    .header h1 {
-      font-family: 'Playfair Display', Georgia, serif;
-      font-size: 2.4rem;
-      font-weight: 700;
-      color: #1a2a3a;
-      letter-spacing: 0.5px;
-      margin-bottom: 12px;
-    }
+        .header h1 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 2.4rem;
+            font-weight: 700;
+            color: #1a2a3a;
+            letter-spacing: 0.5px;
+            margin-bottom: 12px;
+        }
 
-    .header .tagline {
-      font-size: 1.05rem;
-      color: #5a6b7d;
-      font-weight: 400;
-      max-width: 560px;
-      margin: 0 auto;
-    }
+        .header .tagline {
+            font-size: 1.05rem;
+            color: #5a6b7d;
+            font-weight: 400;
+            max-width: 560px;
+            margin: 0 auto;
+        }
 
-    /* ====== ABSCHNITTS-ÜBERSCHRIFTEN ====== */
-    h2 {
-      font-family: 'Playfair Display', Georgia, serif;
-      font-size: 1.4rem;
-      font-weight: 600;
-      color: #1a2a3a;
-      margin-top: 40px;
-      margin-bottom: 16px;
-      background: #f8fafc;
-      padding-bottom: 8px;
-      border-bottom: 2px solid #e2e8f0;
-      position: relative;
-    }
+        h2 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: #1a2a3a;
+            margin-top: 40px;
+            margin-bottom: 16px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #e2e8f0;
+            position: relative;
+        }
 
-    /* Kleiner dekorativer Akzent links neben dem h2 */
-    h2::before {
-      content: '';
-      display: inline-block;
-      width: 8px;
-      height: 8px;
-      background: #3b82f6;
-      border-radius: 50%;
-      margin-right: 10px;
-      vertical-align: middle;
-    }
-    h2.no-bottom-border {
-      border-bottom: none;
-}
+        h2::before {
+            content: '';
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            background: #3b82f6;
+            border-radius: 50%;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
 
-    /* ====== PROJEKT-UNTERÜBERSCHRIFTEN ====== */
-    h3 {
-      font-size: 1.05rem;
-      font-weight: 600;
-      color: #2c3e50;
-      margin-top: 24px;
-      margin-bottom: 8px;
-    }
+        h2.no-bottom-border {
+            border-bottom: none;
+        }
 
-    /* ====== ABSÄTZE & LISTEN ====== */
-    p {
-      margin-bottom: 14px;
-      font-size: 0.97rem;
-    }
+        h3 {
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-top: 24px;
+            margin-bottom: 8px;
+        }
 
-    ul {
-      list-style: none;
-      padding: 0;
-    }
+        p {
+            margin-bottom: 14px;
+            font-size: 0.97rem;
+        }
 
-    ul li {
-      padding: 8px 0 8px 24px;
-      position: relative;
-      font-size: 0.97rem;
-    }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
 
-    /* Dezent blauer Pfeil statt Standard-Punkt */
-    ul li::before {
-      content: '▸';
-      position: absolute;
-      left: 4px;
-      color: #3b82f6;
-      font-weight: bold;
-    }
+        ul li {
+            padding: 8px 0 8px 24px;
+            position: relative;
+            font-size: 0.97rem;
+        }
 
-    /* ====== LINKS ====== */
-    a {
-      color: #2563eb;
-      text-decoration: none;
-      border-bottom: 1px solid transparent;
-      transition: border-color 0.2s;
-    }
+        ul li::before {
+            content: '▸';
+            position: absolute;
+            left: 4px;
+            color: #3b82f6;
+            font-weight: bold;
+        }
 
-    a:hover {
-      border-bottom-color: #2563eb;
-    }
+        a {
+            color: #2563eb;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s;
+        }
 
-    /* ====== KONTAKT-BOX ====== */
-    .contact-box {
-      background: #f8fafc;
-      border: 1px solid #e2e8f0;
-      border-radius: 10px;
-      padding: 20px 24px;
-      margin-top: 16px;
-      text-align: center;
-    }
+        a:hover {
+            border-bottom-color: #2563eb;
+        }
 
-    /* ====== RESPONSIVE (Handy) ====== */
-    @media (max-width: 600px) {
-      .container {
-        margin: 16px 12px;
-        padding: 32px 24px;
-      }
-      .header h1 {
-        font-size: 1.8rem;
-      }
-    }
-  </style>
+        .contact-box {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 10px;
+            padding: 20px 24px;
+            margin-top: 16px;
+            text-align: center;
+        }
+
+        /* ====== SPRACHUMSCHALTER ====== */
+        .lang-switch {
+            position: fixed;
+            top: 16px;
+            right: 24px;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            background: #ffffff;
+            padding: 6px 12px;
+            border-radius: 20px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.10);
+            z-index: 1000;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        .lang-switch label {
+            cursor: pointer;
+            padding: 4px 10px;
+            border-radius: 14px;
+            color: #5a6b7d;
+            transition: background 0.2s, color 0.2s;
+            user-select: none;
+        }
+
+        .lang-switch label:hover {
+            background: #e2e8f0;
+        }
+
+        .lang-switch input[type="radio"] {
+            position: absolute;
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .lang-switch label:has(input:checked) {
+            background: #2c3e50;
+            color: #ffffff;
+        }
+
+        /* ====== RESPONSIVE ====== */
+        @media (max-width: 600px) {
+            .container {
+                margin: 16px 12px;
+                padding: 32px 24px;
+            }
+
+            .header h1 {
+                font-size: 1.8rem;
+            }
+
+            .lang-switch {
+                top: 8px;
+                right: 12px;
+                padding: 4px 8px;
+                font-size: 0.78rem;
+            }
+        }
+
+    </style>
 </head>
+
 <body>
 
-  <div class="container">
-
-    <!-- ====== HEADER ====== -->
-    <div class="header">
-      <h1>Hilde Julie Panzou Chimi</h1>
-      <p class="tagline">Logistikerin (M. Sc.) an der Schnittstelle von Logistik und IT –
-        mit Fokus auf SAP-Logistik, Supply-Chain-Management und Prozessoptimierung.</p>
+    <!-- ====== SPRACHUMSCHALTER (oben rechts, fixiert) ====== -->
+    <div class="lang-switch" role="radiogroup" aria-label="Sprache wählen">
+        <label for="lang-de">
+            <input type="radio" name="lang" value="de" id="lang-de" checked>
+            DE
+        </label>
+        <label for="lang-en">
+            <input type="radio" name="lang" value="en" id="lang-en">
+            EN
+        </label>
     </div>
 
-    <!-- ====== ÜBER MICH ====== -->
-    <h2>Über mich</h2>
-    <p>Ich habe an der TU Dortmund Logistik studiert (M. Sc.) und mich auf Optimierungsverfahren,
-      Simulation und IT-Logistik spezialisiert. Durch Weiterbildungen in SAP S/4HANA und
-      SAP BW/4HANA sowie in C++ und SQL verbinde ich logistisches Prozessverständnis mit
-      IT-Kompetenz; praktische Erfahrung habe ich in der Intralogistik und im E-Commerce
-      gesammelt. Mich motiviert es, logistische Abläufe zu analysieren, mit digitalen
-      Lösungen zu verbessern und dabei Fachbereich und IT zusammenzubringen.</p>
+    <div class="container">
 
-    <!-- ====== SCHWERPUNKTE ====== -->
-    <h2>Schwerpunkte</h2>
-    <ul>
-      <li>SAP-Logistik (Beschaffung, Materialwirtschaft, Produktionsplanung, Vertrieb) und SAP BW/4HANA</li>
-      <li>IT-Logistik und Prozessdigitalisierung</li>
-      <li>Supply Chain Management und logistisches Netzwerkdesign</li>
-      <li>Effiziente Disposition und Intralogistik</li>
-      <li>Optimierung und Simulation logistischer Systeme</li>
-    </ul>
+        <!-- ====== HEADER ====== -->
+        <div class="header">
+            <h1>Hilde Julie Panzou Chimi</h1>
+            <p class="tagline" data-de="Logistikerin (M. Sc.) an der Schnittstelle von Logistik und IT – mit Fokus auf SAP-Logistik, Supply-Chain-Management und Prozessoptimierung." data-en="Logistics Specialist (M. Sc.) at the intersection of logistics and IT – with a focus on SAP Logistics, Supply Chain Management, and process optimization.">
+                Logistikerin (M. Sc.) an der Schnittstelle von Logistik und IT –
+                mit Fokus auf SAP-Logistik, Supply-Chain-Management und Prozessoptimierung.
+            </p>
+        </div>
 
-    <!-- ====== PROJEKTE ====== -->
-    <h2>Projekte</h2>
+        <!-- ====== ÜBER MICH ====== -->
+        <h2 data-de="Über mich" data-en="About Me">Über mich</h2>
+        <p data-de="Ich habe an der TU Dortmund Logistik studiert (M. Sc.) und mich auf Optimierungsverfahren, Simulation und IT-Logistik spezialisiert. Durch Weiterbildungen in SAP S/4HANA und SAP BW/4HANA sowie in C++ und SQL verbinde ich logistisches Prozessverständnis mit IT-Kompetenz; praktische Erfahrung habe ich in der Intralogistik und im E-Commerce gesammelt. Mich motiviert es, logistische Abläufe zu analysieren, mit digitalen Lösungen zu verbessern und dabei Fachbereich und IT zusammenzubringen." data-en="I studied Logistics at TU Dortmund (M. Sc.) and specialized in optimization methods, simulation, and IT logistics. Through further training in SAP S/4HANA and SAP BW/4HANA as well as in C++ and SQL, I combine logistics process understanding with IT competence; I have gained practical experience in intralogistics and e-commerce. I am motivated to analyze logistics processes, improve them with digital solutions, and bring together the business and IT sides.">
+            Ich habe an der TU Dortmund Logistik studiert (M. Sc.) und mich auf Optimierungsverfahren,
+            Simulation und IT-Logistik spezialisiert. Durch Weiterbildungen in SAP S/4HANA und
+            SAP BW/4HANA sowie in C++ und SQL verbinde ich logistisches Prozessverständnis mit
+            IT-Kompetenz; praktische Erfahrung habe ich in der Intralogistik und im E-Commerce
+            gesammelt. Mich motiviert es, logistische Abläufe zu analysieren, mit digitalen
+            Lösungen zu verbessern und dabei Fachbereich und IT zusammenzubringen.
+        </p>
 
-    <h3>Masterarbeit (2025–2026): Realitätsnähe mathematischer Modelle in Logistik-Service-Netzen</h3>
-    <p>Auf Grundlage einer systematischen Literaturrecherche wurde zunächst ein Kriterienkatalog
-      mit 19 Kriterien zur Bewertung der Realitätsnähe mathematischer Modelle entwickelt.
-      Durch die qualitative Inhaltsanalyse von neun Experteninterviews wurde dieser Katalog
-      überprüft, präzisiert und auf 14 validierte Kriterien verdichtet. Abschließend wurden
-      fünf aktuelle, in der Forschungsliteratur veröffentlichte Modelle anhand des entwickelten
-      Kriterienkatalogs systematisch bewertet.</p>
+        <!-- ====== SCHWERPUNKTE ====== -->
+        <h2 data-de="Schwerpunkte" data-en="Key Areas">Schwerpunkte</h2>
+        <ul>
+            <li data-de="SAP-Logistik (Beschaffung, Materialwirtschaft, Produktionsplanung, Vertrieb) und SAP BW/4HANA" data-en="SAP Logistics (Procurement, Materials Management, Production Planning, Sales) and SAP BW/4HANA">
+                SAP-Logistik (Beschaffung, Materialwirtschaft, Produktionsplanung, Vertrieb) und SAP BW/4HANA
+            </li>
+            <li data-de="IT-Logistik und Prozessdigitalisierung" data-en="IT Logistics and Process Digitalization">
+                IT-Logistik und Prozessdigitalisierung
+            </li>
+            <li data-de="Supply Chain Management und logistisches Netzwerkdesign" data-en="Supply Chain Management and Logistics Network Design">
+                Supply Chain Management und logistisches Netzwerkdesign
+            </li>
+            <li data-de="Effiziente Disposition und Intralogistik" data-en="Efficient Scheduling and Intralogistics">
+                Effiziente Disposition und Intralogistik
+            </li>
+            <li data-de="Optimierung und Simulation logistischer Systeme" data-en="Optimization and Simulation of Logistics Systems">
+                Optimierung und Simulation logistischer Systeme
+            </li>
+        </ul>
 
-    <h3>Fachlabor Logistik – Simulation (2019)</h3>
-    <p>Entwicklung und Analyse logistischer Simulationsmodelle mit Plant Simulation und
-      Enterprise Dynamics. Der Arbeitsprozess umfasste die Erstellung konzeptioneller Modelle,
-      deren softwaregestützte Umsetzung sowie die Durchführung und Auswertung von
-      Simulationsexperimenten.</p>
+        <!-- ====== PROJEKTE ====== -->
+        <h2 data-de="Projekte" data-en="Projects">Projekte</h2>
 
-    <h3>Fachlabor Logistik – Optimierung (2020)</h3>
-    <p>Bearbeitung einer strategischen Netzplanungsaufgabe mithilfe der Optimierungssoftware
-      GAMS. Die Tätigkeiten umfassten die Analyse relevanter Einflussgrößen und Kosten, die
-      Implementierung des mathematischen Optimierungsmodells sowie dessen Lösung mithilfe
-      eines Solvers. Darüber hinaus wurde im Team eine geeignete Lösungsstrategie entwickelt
-      und abgestimmt.</p>
+        <h3 data-de="Masterarbeit (2025–2026): Realitätsnähe mathematischer Modelle in Logistik-Service-Netzen" data-en="Master's Thesis (2025–2026): Realism of Mathematical Models in Logistics Service Networks">
+            Masterarbeit (2025–2026): Realitätsnähe mathematischer Modelle in Logistik-Service-Netzen
+        </h3>
+        <p data-de="Auf Grundlage einer systematischen Literaturrecherche wurde zunächst ein Kriterienkatalog mit 19 Kriterien zur Bewertung der Realitätsnähe mathematischer Modelle entwickelt. Durch die qualitative Inhaltsanalyse von neun Experteninterviews wurde dieser Katalog überprüft, präzisiert und auf 14 validierte Kriterien verdichtet. Abschließend wurden fünf aktuelle, in der Forschungsliteratur veröffentlichte Modelle anhand des entwickelten Kriterienkatalogs systematisch bewertet." data-en="Based on a systematic literature review, a catalogue of 19 criteria for assessing the realism of mathematical models was first developed. Through qualitative content analysis of nine expert interviews, this catalogue was reviewed, refined, and condensed into 14 validated criteria. Finally, five recently published models from the research literature were systematically evaluated using the developed catalogue.">
+            Auf Grundlage einer systematischen Literaturrecherche wurde zunächst ein Kriterienkatalog
+            mit 19 Kriterien zur Bewertung der Realitätsnähe mathematischer Modelle entwickelt.
+            Durch die qualitative Inhaltsanalyse von neun Experteninterviews wurde dieser Katalog
+            überprüft, präzisiert und auf 14 validierte Kriterien verdichtet. Abschließend wurden
+            fünf aktuelle, in der Forschungsliteratur veröffentlichte Modelle anhand des entwickelten
+            Kriterienkatalogs systematisch bewertet.
+        </p>
 
-    <h3>Fachwissenschaftliche Projektarbeit: Entwicklung einer Übungsreihe zur Optimierung im KEP-Kontext (2019)</h3>
-    <p>Die für die Lehrveranstaltung Verkehrslogistik II entwickelte Übungsreihe behandelte
-      zentrale Problemstellungen der mathematischen Optimierung, darunter lineare Optimierung,
-      Standortplanung (Warehouse Location Problem) sowie Touren- und Routenplanung
-      (Traveling-Salesman-Problem und kapazitiertes Vehicle-Routing-Problem). Ergänzend
-      wurden geeignete Lösungsverfahren vermittelt und ein didaktisches Konzept zur
-      Integration von E-Learning-Elementen konzipiert.</p>
+        <h3 data-de="Fachlabor Logistik – Simulation (2019)" data-en="Logistics Lab – Simulation (2019)">
+            Fachlabor Logistik – Simulation (2019)
+        </h3>
+        <p data-de="Entwicklung und Analyse logistischer Simulationsmodelle mit Plant Simulation und Enterprise Dynamics. Der Arbeitsprozess umfasste die Erstellung konzeptioneller Modelle, deren softwaregestützte Umsetzung sowie die Durchführung und Auswertung von Simulationsexperimenten." data-en="Development and analysis of logistics simulation models using Plant Simulation and Enterprise Dynamics. The workflow included creating conceptual models, their software-based implementation, as well as conducting and evaluating simulation experiments.">
+            Entwicklung und Analyse logistischer Simulationsmodelle mit Plant Simulation und
+            Enterprise Dynamics. Der Arbeitsprozess umfasste die Erstellung konzeptioneller Modelle,
+            deren softwaregestützte Umsetzung sowie die Durchführung und Auswertung von
+            Simulationsexperimenten.
+        </p>
 
-    <h3>Unternehmenslogistik und Supply Chain Management (2017)</h3>
-    <p>Grundlagen und Vertiefung essenzieller Themen der Unternehmenslogistik und des
-      Supply Chain Managements, insbesondere Supply-Chain-Strategien, strategische
-      Netzwerkplanung, Risikomanagement, Nachhaltigkeit und Industrie 4.0.</p>
+        <h3 data-de="Fachlabor Logistik – Optimierung (2020)" data-en="Logistics Lab – Optimization (2020)">
+            Fachlabor Logistik – Optimierung (2020)
+        </h3>
+        <p data-de="Bearbeitung einer strategischen Netzplanungsaufgabe mithilfe der Optimierungssoftware GAMS. Die Tätigkeiten umfassten die Analyse relevanter Einflussgrößen und Kosten, die Implementierung des mathematischen Optimierungsmodells sowie dessen Lösung mithilfe eines Solvers. Darüber hinaus wurde im Team eine geeignete Lösungsstrategie entwickelt und abgestimmt." data-en="Solving a strategic network planning task using the optimization software GAMS. Activities included analyzing relevant factors and costs, implementing the mathematical optimization model, and solving it using a solver. Additionally, a suitable solution strategy was developed and coordinated in a team.">
+            Bearbeitung einer strategischen Netzplanungsaufgabe mithilfe der Optimierungssoftware
+            GAMS. Die Tätigkeiten umfassten die Analyse relevanter Einflussgrößen und Kosten, die
+            Implementierung des mathematischen Optimierungsmodells sowie dessen Lösung mithilfe
+            eines Solvers. Darüber hinaus wurde im Team eine geeignete Lösungsstrategie entwickelt
+            und abgestimmt.
+        </p>
 
-    <!-- ====== KONTAKT ====== -->
-    <!-- <h2>Kontakt</h2> -->
-    <h2 class="no-bottom-border">Kontakt</h2> <!-- Die Klasse für keine Linie unten -->
-    <div class="contact-box">
-      <p>Ich freue mich über Ihre Nachricht.</p>
-      <p>E-Mail: <a href="mailto:dareyan@gmx.de">dareyan@gmx.de</a></p>
+        <h3 data-de="Fachwissenschaftliche Projektarbeit: Entwicklung einer Übungsreihe zur Optimierung im KEP-Kontext (2019)" data-en="Academic Project: Development of an Exercise Series on Optimization in the Parcel Express Post Context (2019)">
+            Fachwissenschaftliche Projektarbeit: Entwicklung einer Übungsreihe zur Optimierung im KEP-Kontext (2019)
+        </h3>
+        <p data-de="Die für die Lehrveranstaltung Verkehrslogistik II entwickelte Übungsreihe behandelte zentrale Problemstellungen der mathematischen Optimierung, darunter lineare Optimierung, Standortplanung (Warehouse Location Problem) sowie Touren- und Routenplanung (Traveling-Salesman-Problem und kapazitiertes Vehicle-Routing-Problem). Ergänzend wurden geeignete Lösungsverfahren vermittelt und ein didaktisches Konzept zur Integration von E-Learning-Elementen konzipiert." data-en="The exercise series developed for the course Transportation Logistics II addressed central problems in mathematical optimization, including linear optimization, facility location (Warehouse Location Problem), and tour/route planning (Traveling Salesman Problem and Capacitated Vehicle Routing Problem). Additionally, suitable solution methods were taught and a didactic concept for integrating e-learning elements was designed.">
+            Die für die Lehrveranstaltung Verkehrslogistik II entwickelte Übungsreihe behandelte
+            zentrale Problemstellungen der mathematischen Optimierung, darunter lineare Optimierung,
+            Standortplanung (Warehouse Location Problem) sowie Touren- und Routenplanung
+            (Traveling-Salesman-Problem und kapazitiertes Vehicle-Routing-Problem). Ergänzend
+            wurden geeignete Lösungsverfahren vermittelt und ein didaktisches Konzept zur
+            Integration von E-Learning-Elementen konzipiert.
+        </p>
+
+        <h3 data-de="Unternehmenslogistik und Supply Chain Management (2017)" data-en="Business Logistics and Supply Chain Management (2017)">
+            Unternehmenslogistik und Supply Chain Management (2017)
+        </h3>
+        <p data-de="Grundlagen und Vertiefung essenzieller Themen der Unternehmenslogistik und des Supply Chain Managements, insbesondere Supply-Chain-Strategien, strategische Netzwerkplanung, Risikomanagement, Nachhaltigkeit und Industrie 4.0." data-en="Fundamentals and in-depth coverage of essential topics in business logistics and supply chain management, in particular supply chain strategies, strategic network planning, risk management, sustainability, and Industry 4.0.">
+            Grundlagen und Vertiefung essenzieller Themen der Unternehmenslogistik und des
+            Supply Chain Managements, insbesondere Supply-Chain-Strategien, strategische
+            Netzwerkplanung, Risikomanagement, Nachhaltigkeit und Industrie 4.0.
+        </p>
+
+        <!-- ====== KONTAKT ====== -->
+        <h2 data-de="Kontakt" data-en="Contact">Kontakt</h2>
+        <h2 class="no-bottom-border" data-de="Kontakt" data-en="Contact">Kontakt</h2>
+        <div class="contact-box">
+            <p data-de="Ich freue mich über Ihre Nachricht." data-en="I look forward to hearing from you.">
+                Ich freue mich über Ihre Nachricht.
+            </p>
+            <p>
+                <span data-de="E-Mail:" data-en="E-mail:">E-Mail:</span>
+                <a href="mailto:dareyan@gmx.de">dareyan@gmx.de</a>
+            </p>
+        </div>
+
     </div>
 
-  </div>
+    <!-- ====== SPRACH-UMSCHALT-LOGIK ====== -->
+    <script>
+        (function() {
+            "use strict";
+
+            var STORAGE_KEY = "site-lang";
+            var currentLang = localStorage.getItem(STORAGE_KEY) || "de";
+
+            function applyLang(lang) {
+                // Alle Elemente mit data-de / data-en aktualisieren
+                document.querySelectorAll("[data-de], [data-en]").forEach(function(el) {
+                    var text = el.getAttribute("data-" + lang);
+                    if (text !== null) {
+                        el.textContent = text;
+                    }
+                });
+
+                // <title> aktualisieren
+                var titleEl = document.querySelector("title");
+                if (titleEl) {
+                    var newTitle = titleEl.getAttribute("data-" + lang);
+                    if (newTitle) document.title = newTitle;
+                }
+
+                // <html lang="…"> setzen
+                document.documentElement.lang = lang;
+
+                // Aktiven Radio-Button markieren
+                var radio = document.querySelector('input[name="lang"][value="' + lang + '"]');
+                if (radio) radio.checked = true;
+
+                // Wahl speichern
+                localStorage.setItem(STORAGE_KEY, lang);
+                currentLang = lang;
+            }
+
+            // Radio-Buttons: auf Klick reagieren
+            document.querySelectorAll('input[name="lang"]').forEach(function(radio) {
+                radio.addEventListener("change", function(e) {
+                    applyLang(e.target.value);
+                });
+            });
+
+            // Beim Laden: gespeicherte Sprache anwenden
+            document.addEventListener("DOMContentLoaded", function() {
+                applyLang(currentLang);
+            });
+
+        })();
+
+    </script>
 
 </body>
+
 </html>
